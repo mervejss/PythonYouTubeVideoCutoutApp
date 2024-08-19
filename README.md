@@ -26,7 +26,7 @@ Python YouTube Video Cutout App, kullanıcıların YouTube videolarını indirip
 
 Python 3.x'i [Python'un resmi sitesinden](https://www.python.org) indirip kurun. Aşağıdaki komutları kullanarak gerekli Python kütüphanelerini yükleyin:
 
-```bash
+bash
 pip install PyQt5 yt-dlp moviepy
 
 FFmpeg Kurulumu
@@ -41,10 +41,8 @@ Kodu kopyala
 python main.py
 Video İndirme ve Kesme
 YouTube Linki: İndirmek istediğiniz YouTube videosunun URL'sini girin.
-Başlangıç Zamanı: Videonun kesilmeye başlanacağı zamanı saat:dakika
-formatında girin.
-Bitiş Zamanı: Videonun kesilmesini istediğiniz zamanı saat:dakika
-formatında girin.
+Başlangıç Zamanı: Videonun kesilmeye başlanacağı zamanı saat:dakika:saniye formatında girin.
+Bitiş Zamanı: Videonun kesilmesini istediğiniz zamanı saat:dakika:saniye formatında girin.
 Çözünürlük: İstediğiniz video çözünürlüğünü seçin.
 İndir ve Kes: Butonuna tıklayarak video indirme ve kesme işlemini başlatın.
 Kod Açıklamaları
@@ -53,8 +51,7 @@ download_video Metodu: Kullanıcının girdiği URL, zaman aralığı ve çözü
 download_and_cut_video Fonksiyonu:
 Video İndirme: yt_dlp kütüphanesi kullanılarak video indirilir.
 Video Kesme: moviepy kütüphanesi kullanılarak video kesilir ve belirtilen çözünürlükte kaydedilir.
-convert_to_seconds Fonksiyonu: Zaman dönüşümü: saat:dakika
-formatındaki zaman bilgilerini saniyeye dönüştürür.
+convert_to_seconds Fonksiyonu: Zaman dönüşümü: saat:dakika:saniye formatındaki zaman bilgilerini saniyeye dönüştürür.
 Hata Ayıklama
 Eğer bir hata ile karşılaşırsanız, hata mesajını dikkatlice okuyun ve yukarıdaki adımları takip ederek gerekli düzeltmeleri yapın. Herhangi bir hata ile ilgili ek destek için GitHub Issues sayfasını kullanabilirsiniz.
 
